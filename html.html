@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1 style="text-align: center;">Lesson 1: HTML</h1>
+<h1 style="text-align: center;"> <mark>Lesson 1: HTML</mark></h1>
 
 
 <h2><STrong><MArk>I) What is HTML?</MArk></STrong></h2>
@@ -20,6 +20,7 @@
     <li>HTML elements help the browser understand and format the content</li>
     <li>HTML elements label pieces of content such as “this is a title”, “this is a paragraph”, “this is a link”, etc.</li>
 </ul>
+
 <hr>
 
 <h2><STrong><Mark>II) Structure of an HTML5 document</Mark></STrong></h2>
@@ -60,11 +61,228 @@
 <h3>&lt;h1&gt; My first heading &lt;/h1&gt;</h3>
 <h3>&lt;p&gt; My first paragraph. &lt;/p&gt;</h3>
 </pre>
+<h2> <mark>I) Text Structuring Tags</mark></h2>
+
+<table border="3">
+    <tr>
+        <th>Tag</th>
+        <th>Role</th>
+        <th>Result</th>
+    </tr>
+
+    <!-- 1 -->
+    <tr>
+        <td>
+            &lt;p&gt; paragraph 1 &lt;/p&gt;<br>
+            &lt;p&gt; paragraph 2 &lt;/p&gt;
+        </td>
+        <td><strong>Paragraph</strong></td>
+        <td>
+            paragraph 1 <br>
+            paragraph 2
+        </td>
+    </tr>
+
+    <!-- 2 -->
+    <tr>
+        <td>&lt;p&gt; Line 1 &lt;br /&gt; Line 2 &lt;/p&gt;</td>
+        <td>Line break</td>
+        <td>
+            Line 1 <br>
+            Line 2
+        </td>
+    </tr>
+
+    <!-- 3 -->
+    <tr>
+        <td>&lt;strong&gt; Strong emphasis &lt;/strong&gt;</td>
+        <td>Bold text</td>
+        <td><strong>Strong emphasis</strong></td>
+    </tr>
+
+    <!-- 4 -->
+    <tr>
+        <td>&lt;em&gt; Normal emphasis &lt;/em&gt;</td>
+        <td>Italic text</td>
+        <td><em>Normal emphasis</em></td>
+    </tr>
+
+    <!-- 5 -->
+    <tr>
+        <td>&lt;mark&gt; Visual emphasis &lt;/mark&gt;</td>
+        <td>Text highlight element</td>
+        <td><mark>Visual emphasis</mark></td>
+    </tr>
+
+    <!-- 6 -->
+    <tr>
+        <td>
+            &lt;p&gt; paragraph 1 &lt;/p&gt;<br>
+            &lt;hr /&gt;<br>
+            &lt;p&gt; paragraph 2 &lt;/p&gt;
+        </td>
+        <td>Horizontal rule (centered by default)</td>
+        <td>
+            paragraph 1 <br>
+            <hr>
+            paragraph 2
+        </td>
+    </tr>
+
+    <!-- 7 -->
+    <tr>
+        <td>&lt;h1&gt; Heading level 1 &lt;/h1&gt;</td>
+        <td>Heading size 1 (largest)</td>
+        <td><h1 style="margin: 0;">Heading level 1</h1></td>
+    </tr>
+
+    <tr>
+        <td>&lt;h2&gt; Heading level 2 &lt;/h2&gt;</td>
+        <td>Heading size 2</td>
+        <td><h2 style="margin: 0;">Heading level 2</h2></td>
+    </tr>
+
+    <tr>
+        <td>&lt;h3&gt; Heading level 3 &lt;/h3&gt;</td>
+        <td>Heading size 3</td>
+        <td><h3 style="margin: 0;">Heading level 3</h3></td>
+    </tr>
+
+    <tr>
+        <td>&lt;h4&gt; Heading level 4 &lt;/h4&gt;</td>
+        <td>Heading size 4</td>
+        <td><h4 style="margin: 0;">Heading level 4</h4></td>
+    </tr>
+
+    <tr>
+        <td>&lt;h5&gt; Heading level 5 &lt;/h5&gt;</td>
+        <td>Heading size 5</td>
+        <td><h5 style="margin: 0;">Heading level 5</h5></td>
+    </tr>
+
+    <tr>
+        <td>&lt;h6&gt; Heading level 6 &lt;/h6&gt;</td>
+        <td>Heading size 6 (smallest)</td>
+        <td><h6 style="margin: 0;">Heading level 6</h6></td>
+    </tr>
+</table>
+
+<h2> <mark>II) List Tags</mark></h2>
+
+<h3><mark>1) Ordered List</mark></h3>
+<table border="3">
+    <tr>
+        <th>Tag</th>
+        <th>Role</th>
+        <th>Result</th>
+    </tr>
+
+    <tr>
+        <td>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #3&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </td>
+
+        <td>
+            Numbered list<br>
+            (type can be "1" (1,2,3),<br>
+            "a" (a,b,c), "A" (A,B,C),<br>
+            "I" (I,II,III,IV) or "i"<br>
+            (i,ii,iii,iv))
+        </td>
+
+        <td>
+            <ol>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+            </ol>
+        </td>
+    </tr>
+</table>
 
 <br>
 
-<em><a href="index.html">← Back to Home</a></em>
+<h3> <mark>2) Unordered List</mark></h3>
+
+<table border="3">
+    <tr>
+        <th>Tag</th>
+        <th>Role</th>
+        <th>Result</th>
+    </tr>
+
+    <tr>
+        <td>
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Item #3&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </td>
+
+        <td>
+            Unnumbered list<br>
+            (bullet points)<br>
+            List item<br>
+            (type can be "disc",<br>
+            "square" or "circle")
+        </td>
+
+        <td>
+            <ul>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h3> <mark>3) A description list, with terms and descriptions:</mark></h3>
+
+<table border="3">
+    <tr>
+        <th>Tag</th>
+        <th>Role</th>
+        <th>Result</th>
+    </tr>
+
+    <tr>
+        <td>
+            &lt;dl&gt;<br>
+            &nbsp;&nbsp;&lt;dt&gt; HTML &lt;/dt&gt;<br>
+            &nbsp;&nbsp;&lt;dd&gt; Hyper Text Markup Language &lt;/dd&gt;<br>
+            &nbsp;&nbsp;&lt;dt&gt; XHTML &lt;/dt&gt;<br>
+            &nbsp;&nbsp;&lt;dd&gt; Extensible Hyper Text Markup Language &lt;/dd&gt;<br>
+            &lt;/dl&gt;
+        </td>
+
+        <td>
+            Glossary list.<br><br>
+            Glossary term (no indent).<br><br>
+            Explanation (DETAIL) of the term (indented).
+        </td>
+
+        <td>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Language</dd>
+
+                <dt>XHTML</dt>
+                <dd>Extensible Hyper Text Markup Language</dd>
+            </dl>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+<a href="index.html">← Back to Home</a>
 
 </body>
 </html>
-
